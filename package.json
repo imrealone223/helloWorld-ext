@@ -1,0 +1,39 @@
+{
+    "name": "helloWorld-ext",
+    "displayName": "helloWorld-ext",
+    "description": "My First Extension",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.60.0"
+    },
+    "categories": ["Other"],
+    "activationEvents": [
+        "onCommand:helloWorld.helloWorld"
+    ],
+    "main": "./out/extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "helloWorld-ext.helloWorld",
+                "title": "Hello World"
+            }
+        ],
+        "keybindings": [
+            {
+                "command": "helloWorld-ext.helloWorld",
+                "key": "ctrl+shift+h"
+            }
+]
+        
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./"
+    },
+    "devDependencies": {
+        "@types/vscode": "^1.60.0",
+        "@types/node": "16.x",
+        "typescript": "^4.9.4"
+    }
+}
