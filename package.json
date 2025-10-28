@@ -8,7 +8,7 @@
     },
     "categories": ["Other"],
     "activationEvents": [
-        "onCommand:helloWorld.helloWorld"
+        "onCommand:helloWorld-ext.helloWorld"
     ],
     "main": "./out/extension.js",
     "contributes": {
